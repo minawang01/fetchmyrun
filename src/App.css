@@ -1,0 +1,154 @@
+:root {
+  --gradientstart: #0099ff;
+  --gradientend: #ccffff;
+  --heading-font: "Lexend Peta", sans-serif;
+  --normal-text: "Raleway", sans-serif;
+  --highlight: rgb(255, 204, 255, 0.6);
+}
+.App {
+  text-align: center;
+  background-image: linear-gradient(var(--gradientstart), var(--gradientend));
+  min-height: 100vh;
+}
+
+.App-header {
+  background-image: linear-gradient(var(--gradientstart), var(--gradientend));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.page {
+  display: none !important;
+}
+
+#wrapper {
+  min-height: 100vh;
+  background-image: linear-gradient(var(--gradientstart), var(--gradientend));
+}
+#results_page {
+  min-height: 100vh;
+  background-image: linear-gradient(var(--gradientend), var(--highlight));
+}
+
+.active {
+  display: flex !important;
+}
+
+.hide {
+  display: none;
+}
+
+.form-container {
+  min-height: 80vh;
+}
+
+.box {
+  background: rgb(0, 0, 0, 0.1);
+  border-radius: 5%;
+  border-width: solid grey 2px;
+  height: inherit;
+}
+
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: var(--heading-font);
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+div.form {
+  padding: 0 1rem 1rem 1rem;
+}
+div.form form {
+  width: 100%;
+}
+div.form label {
+  padding-right: 10px !important;
+}
+
+div.form label.end {
+  padding-left: 10px !important;
+}
+
+div.form label,
+div.form input,
+div.dropdown,
+div.form button {
+  font-family: var(--normal-text);
+}
+
+div.form input,
+div.form select {
+  background-color: rgb(255, 255, 255, 0.5);
+  height: 2rem;
+}
+
+button.more {
+  background-color: var(--highlight) !important;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+button.submit {
+  background-color: var(--gradientstart) !important;
+}
+
+/* Weather Cardss */
+
+.text {
+  font-family: var(--normal-text);
+  font-size: 1rem;
+}
+
+h4.text span {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+div.card {
+  margin-top: 2rem;
+}
+
+/*Results*/
+
+#results_page {
+  position: relative;
+  min-height: 100vh;
+}
+
+div.results-container {
+  width: 100vw;
+  padding-bottom: 10vh;
+  padding-top: 2rem;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.footer {
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.back {
+  position: relative;
+  left: 4rem;
+  bottom: 2rem;
+}
+
+.weather-container {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.weather-container .card {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
